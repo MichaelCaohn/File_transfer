@@ -14,9 +14,9 @@ from itertools import chain
 
 import torch
 
-from fairseq import distributed_utils, models, optim, utils
-from fairseq.meters import AverageMeter, StopwatchMeter, TimeMeter
-from fairseq.optim import lr_scheduler
+from fairseq.fairseq import distributed_utils, models, optim, utils
+from fairseq.fairseq.meters import AverageMeter, StopwatchMeter, TimeMeter
+from fairseq.fairseq.optim import lr_scheduler
 
 
 class Trainer(object):

@@ -8,7 +8,7 @@
 import torch
 import numpy as np
 
-from fairseq.data import data_utils
+from fairseq.fairseq.data import data_utils
 
 
 class WordNoising(object):

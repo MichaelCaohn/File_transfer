@@ -18,8 +18,8 @@ import sys
 
 from tqdm import tqdm
 
-from fairseq import distributed_utils
-from fairseq.meters import AverageMeter, StopwatchMeter, TimeMeter
+from fairseq.fairseq import distributed_utils
+from fairseq.fairseq.meters import AverageMeter, StopwatchMeter, TimeMeter
 
 
 def build_progress_bar(args, iterator, epoch=None, prefix=None, default='tqdm', no_progress_bar='none'):

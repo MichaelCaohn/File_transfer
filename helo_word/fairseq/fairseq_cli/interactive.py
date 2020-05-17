@@ -15,9 +15,9 @@ import sys
 
 import torch
 
-from fairseq import data, options, tasks, tokenizer, utils
-from fairseq.sequence_generator import SequenceGenerator
-from fairseq.utils import import_user_module
+from fairseq.fairseq import data, options, tasks, tokenizer, utils
+from fairseq.fairseq.sequence_generator import SequenceGenerator
+from fairseq.fairseq.utils import import_user_module
 
 Batch = namedtuple('Batch', 'ids src_tokens src_lengths')
 Translation = namedtuple('Translation', 'src_str hypos pos_scores alignments')

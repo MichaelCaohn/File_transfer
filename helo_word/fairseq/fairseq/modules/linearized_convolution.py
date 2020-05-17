@@ -8,7 +8,7 @@
 import torch
 import torch.nn.functional as F
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 from .conv_tbc import ConvTBC
 

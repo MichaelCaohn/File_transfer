@@ -10,7 +10,7 @@ import unittest
 
 import torch
 
-from fairseq.sequence_generator import SequenceGenerator
+from fairseq.fairseq.sequence_generator import SequenceGenerator
 
 import tests.utils as test_utils
 

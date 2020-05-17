@@ -14,7 +14,7 @@ import torch
 import torch.distributed as dist
 from torch import nn
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 
 def is_master(args):

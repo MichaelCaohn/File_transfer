@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from . import FairseqDecoder, FairseqEncoder
-from fairseq.data import Dictionary
+from fairseq.fairseq.data import Dictionary
 
 
 class BaseFairseqModel(nn.Module):

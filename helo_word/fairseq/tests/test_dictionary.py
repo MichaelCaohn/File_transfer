@@ -10,7 +10,7 @@ import unittest
 
 import torch
 
-from fairseq.data import Dictionary
+from fairseq.fairseq.data import Dictionary
 
 
 class TestDictionary(unittest.TestCase):

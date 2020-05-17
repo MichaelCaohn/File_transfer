@@ -7,7 +7,7 @@
 
 import torch.nn as nn
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 
 class LearnedPositionalEmbedding(nn.Embedding):

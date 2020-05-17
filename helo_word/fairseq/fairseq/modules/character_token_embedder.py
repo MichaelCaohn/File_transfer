@@ -13,7 +13,7 @@ from torch import nn
 from typing import List, Tuple
 
 from .highway import Highway
-from fairseq.data import Dictionary
+from fairseq.fairseq.data import Dictionary
 
 CHAR_PAD_IDX = 0
 CHAR_EOS_IDX = 257

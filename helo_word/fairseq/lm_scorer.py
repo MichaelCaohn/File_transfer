@@ -34,10 +34,10 @@ import numpy as np
 import torch
 from collections import namedtuple
 
-from fairseq import options, progress_bar, tasks, utils, tokenizer, data
-from fairseq.meters import StopwatchMeter, TimeMeter
-from fairseq.sequence_scorer import SequenceScorer
-from fairseq.utils import import_user_module
+from fairseq.fairseq import options, progress_bar, tasks, utils, tokenizer, data
+from fairseq.fairseq.meters import StopwatchMeter, TimeMeter
+from fairseq.fairseq.sequence_scorer import SequenceScorer
+from fairseq.fairseq.utils import import_user_module
 
 
 Batch = namedtuple('Batch', 'srcs tokens lengths')

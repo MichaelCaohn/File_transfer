@@ -16,7 +16,7 @@ fairseq.models.copy_augmented_transformer_el
 
 def test_copy_augmented_transformer_el(args, device):
     """Build a copy-augmented transformer model."""
-    from fairseq.models.copy_augmented_transformer_el import (
+    from fairseq.fairseq.models.copy_augmented_transformer_el import (
         TransformerELEncoder, CopyAugmentedTransformerELDecoder,
         CopyAugmentedTransformerELModel
     )
@@ -28,7 +28,7 @@ def test_copy_augmented_transformer_el(args, device):
 
 def test_compute_copy_probs(device):
     """Sanity check tester for compute_copy_logits."""
-    from fairseq.models.copy_augmented_transformer_el import compute_copy_probs
+    from fairseq.fairseq.models.copy_augmented_transformer_el import compute_copy_probs
     batch_size, tgt_len, src_len, vocab_size = 2, 3, 4, 10
     src_tokens = torch.Tensor([
         [7, 3, 1, 9],
@@ -67,7 +67,7 @@ fairseq.data.token_labeled_language_pair_dataset
 
 
 def test_token_labeled_language_pair_dataset(args, device):
-    from fairseq.data.token_labeled_language_pair_dataset import (
+    from fairseq.fairseq.data.token_labeled_language_pair_dataset import (
         TokenLabeledIndexedRawTextDataset, TokenLabeledLanguagePairDataset
     )
     # raw_text_dataset = TokenLabeledIndexedRawTextDataset(args)

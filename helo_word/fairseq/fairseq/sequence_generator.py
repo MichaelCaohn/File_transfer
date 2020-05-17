@@ -9,8 +9,8 @@ import math
 
 import torch
 
-from fairseq import search, utils
-from fairseq.models import FairseqIncrementalDecoder
+from fairseq.fairseq import search, utils
+from fairseq.fairseq.models import FairseqIncrementalDecoder
 
 
 class SequenceGenerator(object):

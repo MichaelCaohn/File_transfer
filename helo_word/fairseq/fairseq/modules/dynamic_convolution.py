@@ -9,8 +9,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from fairseq import utils
-from fairseq.modules import unfold1d
+from fairseq.fairseq import utils
+from fairseq.fairseq.modules import unfold1d
 
 
 def Linear(in_features, out_features, bias=True):

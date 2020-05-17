@@ -13,8 +13,8 @@ import argparse
 import os
 import sys
 
-from fairseq import bleu
-from fairseq.data import dictionary
+from fairseq.fairseq import bleu
+from fairseq.fairseq.data import dictionary
 
 
 def get_parser():

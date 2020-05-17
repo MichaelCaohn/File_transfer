@@ -8,8 +8,8 @@ import contextlib
 
 import torch
 
-from fairseq import modules, options, utils
-from fairseq.data import (
+from fairseq.fairseq import modules, options, utils
+from fairseq.fairseq.data import (
     ConcatDataset,
     data_utils,
     Dictionary,
@@ -102,7 +102,7 @@ class TranslationMoETask(TranslationTask):
         super().__init__(args, src_dict, tgt_dict)
 
     def build_model(self, args):
-        from fairseq import models
+        from fairseq.fairseq import models
         model = models.build_model(args, self)
         if not self.uniform_prior and not hasattr(model, 'gating_network'):
             if self.args.mean_pool_gating_network:

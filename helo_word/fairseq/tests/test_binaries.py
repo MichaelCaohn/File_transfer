@@ -15,7 +15,7 @@ import unittest
 
 import torch
 
-from fairseq import options
+from fairseq.fairseq import options
 
 import preprocess
 import train

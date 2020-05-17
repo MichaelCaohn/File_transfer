@@ -24,9 +24,9 @@ Search 'MODIFIED' for all changes made.
 
 import torch
 
-from fairseq import bleu, options, progress_bar, tasks, utils
-from fairseq.meters import StopwatchMeter, TimeMeter
-from fairseq.utils import import_user_module
+from fairseq.fairseq import bleu, options, progress_bar, tasks, utils
+from fairseq.fairseq.meters import StopwatchMeter, TimeMeter
+from fairseq.fairseq.utils import import_user_module
 
 
 def main(args):

@@ -10,8 +10,8 @@ import os
 
 import torch
 
-from fairseq import options
-from fairseq.data import (
+from fairseq.fairseq import options
+from fairseq.fairseq.data import (
     Dictionary,
     IndexedCachedDataset,
     IndexedDataset,
@@ -19,7 +19,7 @@ from fairseq.data import (
     LanguagePairDataset,
     RoundRobinZipDatasets,
 )
-from fairseq.models import FairseqMultiModel
+from fairseq.fairseq.models import FairseqMultiModel
 
 from . import FairseqTask, register_task
 
@@ -179,7 +179,7 @@ class MultilingualTranslationTask(FairseqTask):
         )
 
     def build_model(self, args):
-        from fairseq import models
+        from fairseq.fairseq import models
         model = models.build_model(args, self)
         if not isinstance(model, FairseqMultiModel):
             raise ValueError('MultilingualTranslationTask requires a FairseqMultiModel architecture')

@@ -107,7 +107,7 @@ def register_model_architecture(model_name, arch_name):
 for file in os.listdir(os.path.dirname(__file__)):
     if file.endswith('.py') and not file.startswith('_'):
         model_name = file[:file.find('.py')]
-        module = importlib.import_module('fairseq.models.' + model_name)
+        module = importlib.import_module('fairseq.fairseq.models.' + model_name)
 
         # extra `model_parser` for sphinx
         if model_name in MODEL_REGISTRY:

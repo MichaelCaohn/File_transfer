@@ -9,8 +9,8 @@
 
 import argparse
 
-from fairseq.data import dictionary
-from fairseq.data import IndexedDataset
+from fairseq.fairseq.data import dictionary
+from fairseq.fairseq.data import IndexedDataset
 
 
 def get_parser():

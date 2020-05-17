@@ -9,7 +9,7 @@ import unittest
 
 import torch
 
-from fairseq.data import TokenBlockDataset
+from fairseq.fairseq.data import TokenBlockDataset
 
 import tests.utils as test_utils
 

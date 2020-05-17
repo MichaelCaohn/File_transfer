@@ -7,8 +7,8 @@
 
 from collections import OrderedDict
 
-from fairseq import utils
-from fairseq.tasks.multilingual_translation import MultilingualTranslationTask
+from fairseq.fairseq import utils
+from fairseq.fairseq.tasks.multilingual_translation import MultilingualTranslationTask
 
 from . import FairseqMultiModel, register_model, register_model_architecture
 

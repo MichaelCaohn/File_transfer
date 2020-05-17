@@ -7,8 +7,8 @@
 
 import torch
 
-from fairseq import tokenizer
-from fairseq.data import data_utils, FairseqDataset, iterators, Dictionary
+from fairseq.fairseq import tokenizer
+from fairseq.fairseq.data import data_utils, FairseqDataset, iterators, Dictionary
 
 
 class FairseqTask(object):
@@ -82,7 +82,7 @@ class FairseqTask(object):
         Returns:
             a :class:`~fairseq.data.FairseqDataset` corresponding to *split*
         """
-        from fairseq.data import FairseqDataset
+        from fairseq.fairseq.data import FairseqDataset
         if split not in self.datasets:
             raise KeyError('Dataset not loaded: ' + split)
         if not isinstance(self.datasets[split], FairseqDataset):
@@ -162,7 +162,7 @@ class FairseqTask(object):
         Returns:
             a :class:`~fairseq.models.BaseFairseqModel` instance
         """
-        from fairseq import models
+        from fairseq.fairseq import models
         return models.build_model(args, self)
 
     def build_criterion(self, args):
@@ -176,15 +176,15 @@ class FairseqTask(object):
         Returns:
             a :class:`~fairseq.criterions.FairseqCriterion` instance
         """
-        from fairseq import criterions
+        from fairseq.fairseq import criterions
         return criterions.build_criterion(args, self)
 
     def build_generator(self, args):
         if args.score_reference:
-            from fairseq.sequence_scorer import SequenceScorer
+            from fairseq.fairseq.sequence_scorer import SequenceScorer
             return SequenceScorer(self.target_dictionary)
         else:
-            from fairseq.sequence_generator import SequenceGenerator
+            from fairseq.fairseq.sequence_generator import SequenceGenerator
             return SequenceGenerator(
                 self.target_dictionary,
                 beam_size=args.beam,

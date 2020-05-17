@@ -8,7 +8,7 @@
 import math
 import torch.nn.functional as F
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 from . import FairseqCriterion, register_criterion
 

@@ -8,7 +8,7 @@
 import numpy as np
 import torch
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 from . import data_utils, FairseqDataset
 

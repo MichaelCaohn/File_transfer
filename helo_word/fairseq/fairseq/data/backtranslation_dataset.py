@@ -7,7 +7,7 @@
 
 import torch
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 from . import FairseqDataset
 

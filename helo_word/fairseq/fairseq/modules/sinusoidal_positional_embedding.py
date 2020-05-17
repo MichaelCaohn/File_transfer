@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 import torch.onnx.operators
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 
 class SinusoidalPositionalEmbedding(nn.Module):

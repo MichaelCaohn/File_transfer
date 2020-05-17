@@ -9,12 +9,12 @@ import argparse
 
 import torch
 
-from fairseq.criterions import CRITERION_REGISTRY
-from fairseq.models import ARCH_MODEL_REGISTRY, ARCH_CONFIG_REGISTRY
-from fairseq.optim import OPTIMIZER_REGISTRY
-from fairseq.optim.lr_scheduler import LR_SCHEDULER_REGISTRY
-from fairseq.tasks import TASK_REGISTRY
-from fairseq.utils import import_user_module
+from fairseq.fairseq.criterions import CRITERION_REGISTRY
+from fairseq.fairseq.models import ARCH_MODEL_REGISTRY, ARCH_CONFIG_REGISTRY
+from fairseq.fairseq.optim import OPTIMIZER_REGISTRY
+from fairseq.fairseq.optim.lr_scheduler import LR_SCHEDULER_REGISTRY
+from fairseq.fairseq.tasks import TASK_REGISTRY
+from fairseq.fairseq.utils import import_user_module
 
 
 def get_preprocessing_parser(default_task='translation'):

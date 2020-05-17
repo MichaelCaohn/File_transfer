@@ -12,7 +12,7 @@ from unittest.mock import MagicMock, patch
 
 import torch
 
-from fairseq import data
+from fairseq.fairseq import data
 
 import train
 

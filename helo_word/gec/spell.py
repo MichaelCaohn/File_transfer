@@ -5,7 +5,7 @@ import argparse
 from tqdm import tqdm
 from nltk.tokenize import sent_tokenize
 
-from lm_scorer import LMScorer
+from fairseq.lm_scorer import LMScorer
 from .filepath import Path
 from .fix_tokenization_errors import fix
 

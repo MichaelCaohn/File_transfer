@@ -11,9 +11,9 @@ import os
 
 import torch
 
-from fairseq.tokenizer import tokenize_line
-from fairseq.binarizer import safe_readline
-from fairseq.data import data_utils
+from fairseq.fairseq.tokenizer import tokenize_line
+from fairseq.fairseq.binarizer import safe_readline
+from fairseq.fairseq.data import data_utils
 
 
 class Dictionary(object):

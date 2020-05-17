@@ -11,10 +11,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from fairseq import options
-from fairseq import utils
+from fairseq.fairseq import options
+from fairseq.fairseq import utils
 
-from fairseq.modules import (
+from fairseq.fairseq.modules import (
     AdaptiveInput, AdaptiveSoftmax, CharacterTokenEmbedder, LearnedPositionalEmbedding, MultiheadAttention,
     SinusoidalPositionalEmbedding, DynamicConv1dTBC, LightweightConv1dTBC
 )

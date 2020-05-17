@@ -8,8 +8,8 @@
 import torch
 import unittest
 
-from fairseq.data import Dictionary
-from fairseq.modules import CharacterTokenEmbedder
+from fairseq.fairseq.data import Dictionary
+from fairseq.fairseq.modules import CharacterTokenEmbedder
 
 
 class TestCharacterTokenEmbedder(unittest.TestCase):

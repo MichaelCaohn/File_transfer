@@ -10,8 +10,8 @@ from typing import Dict, List
 
 import tests.utils as test_utils
 import torch
-from fairseq import utils
-from fairseq.data import (
+from fairseq.fairseq import utils
+from fairseq.fairseq.data import (
     Dictionary,
     LanguagePairDataset,
     TransformEosDataset,

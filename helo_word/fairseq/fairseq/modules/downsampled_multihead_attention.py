@@ -11,7 +11,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from fairseq.modules.scalar_bias import scalar_bias
+from fairseq.fairseq.modules.scalar_bias import scalar_bias
 
 
 class SingleHeadAttention(nn.Module):

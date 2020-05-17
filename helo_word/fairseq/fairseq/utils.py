@@ -283,7 +283,7 @@ def load_embedding(embed_dict, vocab, embedding):
 
 
 def replace_unk(hypo_str, src_str, alignment, align_dict, unk):
-    from fairseq import tokenizer
+    from fairseq.fairseq import tokenizer
     # Tokens are strings here
     hypo_tokens = tokenizer.tokenize_line(hypo_str)
     # TODO: Very rare cases where the replacement is '<eos>' should be handled gracefully
@@ -297,7 +297,7 @@ def replace_unk(hypo_str, src_str, alignment, align_dict, unk):
 
 
 def post_process_prediction(hypo_tokens, src_str, alignment, align_dict, tgt_dict, remove_bpe):
-    from fairseq import tokenizer
+    from fairseq.fairseq import tokenizer
     hypo_str = tgt_dict.string(hypo_tokens, remove_bpe)
     if align_dict is not None:
         hypo_str = replace_unk(hypo_str, src_str, alignment, align_dict, tgt_dict.unk_string())

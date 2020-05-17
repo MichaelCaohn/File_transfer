@@ -10,8 +10,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from fairseq import options, utils
-from fairseq.modules import (
+from fairseq.fairseq import options, utils
+from fairseq.fairseq.modules import (
     AdaptiveSoftmax, BeamableMM, GradMultiply, LearnedPositionalEmbedding,
     LinearizedConvolution,
 )
@@ -642,7 +642,7 @@ def LinearizedConv1d(in_channels, out_channels, kernel_size, dropout=0, **kwargs
 
 def ConvTBC(in_channels, out_channels, kernel_size, dropout=0, **kwargs):
     """Weight-normalized Conv1d layer"""
-    from fairseq.modules import ConvTBC
+    from fairseq.fairseq.modules import ConvTBC
     m = ConvTBC(in_channels, out_channels, kernel_size, **kwargs)
     std = math.sqrt((4 * (1.0 - dropout)) / (m.kernel_size[0] * in_channels))
     nn.init.normal_(m.weight, mean=0, std=std)

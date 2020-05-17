@@ -34,9 +34,9 @@ import torch
 import os.path
 import itertools
 
-from fairseq import tokenizer
-from fairseq import options
-from fairseq.data import (
+from fairseq.fairseq import tokenizer
+from fairseq.fairseq import options
+from fairseq.fairseq.data import (
     ConcatDataset,
     data_utils,
     Dictionary,

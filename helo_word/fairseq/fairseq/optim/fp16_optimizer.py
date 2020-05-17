@@ -7,7 +7,7 @@
 
 import torch
 
-from fairseq import optim, utils
+from fairseq.fairseq import optim, utils
 
 
 class DynamicLossScaler(object):

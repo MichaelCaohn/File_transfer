@@ -18,8 +18,8 @@ import sys
 import numpy as np
 import random
 
-from fairseq import bleu, tokenizer
-from fairseq.data import dictionary
+from fairseq.fairseq import bleu, tokenizer
+from fairseq.fairseq.data import dictionary
 
 parser = argparse.ArgumentParser(sys.argv[0])
 parser.add_argument('--sys', nargs='*', default='', metavar='FILE',

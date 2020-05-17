@@ -14,9 +14,9 @@ import torch
 import os.path
 import itertools
 
-from fairseq import utils
-from fairseq.tokenizer import tokenize_line
-from fairseq.data.language_pair_dataset import LanguagePairDataset
+from fairseq.fairseq import utils
+from fairseq.fairseq.tokenizer import tokenize_line
+from fairseq.fairseq.data.language_pair_dataset import LanguagePairDataset
 
 from . import data_utils
 

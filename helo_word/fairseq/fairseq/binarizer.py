@@ -8,7 +8,7 @@
 from collections import Counter
 import os
 
-from fairseq.tokenizer import tokenize_line
+from fairseq.fairseq.tokenizer import tokenize_line
 
 
 def safe_readline(f):

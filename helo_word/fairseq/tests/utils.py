@@ -8,15 +8,15 @@
 import argparse
 import torch
 
-from fairseq import utils
-from fairseq.data import Dictionary
-from fairseq.data.language_pair_dataset import collate
-from fairseq.models import (
+from fairseq.fairseq import utils
+from fairseq.fairseq.data import Dictionary
+from fairseq.fairseq.data.language_pair_dataset import collate
+from fairseq.fairseq.models import (
     FairseqEncoder,
     FairseqIncrementalDecoder,
     FairseqModel,
 )
-from fairseq.tasks import FairseqTask
+from fairseq.fairseq.tasks import FairseqTask
 
 
 def dummy_dictionary(vocab_size, prefix='token_'):

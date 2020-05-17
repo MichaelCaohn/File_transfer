@@ -11,7 +11,7 @@ import os
 import torch
 import numpy as np
 
-from fairseq.data import (
+from fairseq.fairseq.data import (
     ConcatDataset,
     Dictionary,
     IndexedCachedDataset,

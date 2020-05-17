@@ -10,7 +10,7 @@ import unittest
 
 import torch
 
-from fairseq.sequence_scorer import SequenceScorer
+from fairseq.fairseq.sequence_scorer import SequenceScorer
 
 import tests.utils as test_utils
 

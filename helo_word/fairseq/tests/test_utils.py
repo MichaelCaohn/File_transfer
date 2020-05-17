@@ -9,7 +9,7 @@ import unittest
 
 import torch
 
-from fairseq import utils
+from fairseq.fairseq import utils
 
 
 class TestUtils(unittest.TestCase):
